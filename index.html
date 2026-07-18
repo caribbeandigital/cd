@@ -245,6 +245,19 @@
   html.js .deploy-panel.in svg a.isl.i3{animation-delay:1.25s}
   html.js .deploy-panel.in svg a.isl.i4{animation-delay:1.7s}
   @keyframes islIn{to{opacity:1}}
+  /* Mer animée — vagues discrètes désynchronisées */
+  .waves .wv{transform-box:fill-box;opacity:.11}
+  @keyframes wvA{from{transform:translate(0,0);opacity:.09}to{transform:translate(9px,-2.5px);opacity:.13}}
+  @keyframes wvB{from{transform:translate(0,0);opacity:.1}to{transform:translate(-8px,2.5px);opacity:.14}}
+  @keyframes wvC{from{transform:translate(0,0);opacity:.08}to{transform:translate(6px,3px);opacity:.12}}
+  @keyframes wvD{from{transform:translate(0,0);opacity:.12}to{transform:translate(-7px,-3px);opacity:.14}}
+  .wv1{animation:wvA 15s -2s ease-in-out infinite alternate}
+  .wv2{animation:wvC 19s -7s ease-in-out infinite alternate}
+  .wv3{animation:wvB 13s -4s ease-in-out infinite alternate}
+  .wv4{animation:wvD 21s -11s ease-in-out infinite alternate}
+  .wv5{animation:wvB 17s -3s ease-in-out infinite alternate}
+  .wv6{animation:wvA 22s -9s ease-in-out infinite alternate}
+  .wv7{animation:wvC 14s -6s ease-in-out infinite alternate}
 
   /* Approche */
   .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3rem)}
@@ -299,6 +312,7 @@
     html.js .deploy-panel svg a.isl{opacity:1;animation:none}
     html.js .reveal{opacity:1;transform:none;transition:none}
     .btn,.feature{transition:none}
+    .wv{animation:none}
   }
 
   /* ---------- Responsive ---------- */
@@ -460,7 +474,7 @@
     <div class="wrap">
       <div class="product-card reveal">
         <span class="badge"><span class="live" aria-hidden="true"></span>Lancement — Saint-Barthélemy · Septembre 2026</span>
-        <h2>Notre produit&nbsp;: <span class="grad-text">Pulse.</span></h2>
+        <h2>Notre produit&nbsp;: <span class="grad-text">Pulse</span></h2>
         <p class="lede">Une application communautaire qui donne le pouls de l'île en temps réel — alimentée par celles et ceux qui y vivent, sous forme de signalements structurés.</p>
         <div class="pc-caps">
           <div class="pc-cap"><span class="pic" aria-hidden="true">
@@ -492,10 +506,14 @@
               </mask>
             </defs>
             <text class="aS" x="306" y="36" text-anchor="middle" style="font-size:11px" opacity=".6">N</text>
-            <g fill="none" stroke="#fff" stroke-linecap="round" opacity=".1" stroke-width="1.3">
-              <path d="M 52 118 c 5 -3.5 10 -3.5 15 0 c 5 3.5 10 3.5 15 0"/>
-              <path d="M 252 258 c 4.5 -3 9 -3 13.5 0 c 4.5 3 9 3 13.5 0"/>
-              <path d="M 42 428 c 4.5 -3 9 -3 13.5 0 c 4.5 3 9 3 13.5 0"/>
+            <g class="waves" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1.3">
+              <path class="wv wv1" d="M 40 116 c 5 -3.5 10 -3.5 15 0 c 5 3.5 10 3.5 15 0"/>
+              <path class="wv wv2" d="M 66 150 c 3.5 -2.5 7 -2.5 10.5 0 c 3.5 2.5 7 2.5 10.5 0"/>
+              <path class="wv wv3" d="M 30 250 c 4.5 -3 9 -3 13.5 0 c 4.5 3 9 3 13.5 0"/>
+              <path class="wv wv4" d="M 40 430 c 5 -3.5 10 -3.5 15 0 c 5 3.5 10 3.5 15 0"/>
+              <path class="wv wv5" d="M 250 250 c 5.5 -4 11 -4 16.5 0 c 5.5 4 11 4 16.5 0"/>
+              <path class="wv wv6" d="M 300 360 c 4 -3 8 -3 12 0 c 4 3 8 3 12 0"/>
+              <path class="wv wv7" d="M 270 430 c 5 -3.5 10 -3.5 15 0 c 5 3.5 10 3.5 15 0"/>
             </g>
             <path d="M 212 64 C 196 130, 158 210, 132 300 C 112 372, 100 430, 96 496" fill="none" stroke="url(#arcG)" stroke-width="1.6" stroke-dasharray="3 6" stroke-linecap="round" mask="url(#arcM)" opacity=".95"/>
 
