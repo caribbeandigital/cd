@@ -1,0 +1,12 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+node_modules/
+
+# Editor / temporaires
+*~
+*.swp
+.vscode/
+.idea/

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://caribbean-digital.fr/sitemap.xml

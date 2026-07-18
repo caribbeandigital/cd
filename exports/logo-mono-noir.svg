@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 134 104">
+<defs>
+<linearGradient id="bgC" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#16406f"></stop><stop offset="1" stop-color="#2f9ad2"></stop></linearGradient>
+<linearGradient id="bgD" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1d64ab"></stop><stop offset="1" stop-color="#46b9e6"></stop></linearGradient>
+<linearGradient id="bgP" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2f9ad2"></stop><stop offset="1" stop-color="#3fdc9a"></stop></linearGradient>
+<mask id="bcut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="184" height="150">
+<rect x="-20" y="-20" width="184" height="150" fill="#fff"></rect>
+<path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"></path>
+</mask>
+</defs><path d="M 64 28 L 42 28 A 24 24 0 0 0 18 52 L 18 60 A 24 24 0 0 0 42 84 L 64 84" fill="none" stroke="#14181d" stroke-width="15" stroke-linecap="round" mask="url(#bcut)"></path>
+<path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#14181d" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"></path>
+<rect x="92" y="10" width="9" height="9" rx="1.6" fill="#14181d"></rect>
+<rect x="104" y="3" width="7.5" height="7.5" rx="1.4" fill="#14181d" opacity="0.95"></rect>
+<rect x="103" y="16" width="5.5" height="5.5" rx="1.1" fill="#14181d" opacity="0.85"></rect>
+<rect x="115" y="9" width="6" height="6" rx="1.2" fill="#14181d" opacity="0.8"></rect>
+<rect x="116" y="0" width="5" height="5" rx="1" fill="#14181d" opacity="0.7"></rect>
+<rect x="126" y="5" width="4" height="4" rx="0.8" fill="#14181d" opacity="0.55"></rect>
+</svg>

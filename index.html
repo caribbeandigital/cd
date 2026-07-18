@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<title>Caribbean Digital — Applications, conseil &amp; IA aux Antilles</title>
+<meta name="description" content="Caribbean Digital conçoit des applications web &amp; mobiles, accompagne entreprises et institutions, et édite Pulse — l'information locale en temps réel aux Antilles françaises.">
+<meta property="og:title" content="Caribbean Digital">
+<meta property="og:description" content="Caribbean Digital conçoit des applications web &amp; mobiles, accompagne entreprises et institutions, et édite Pulse — l'information locale en temps réel aux Antilles françaises.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://caribbean-digital.fr/">
+<meta property="og:image" content="https://caribbean-digital.fr/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://caribbean-digital.fr/">
+<link rel="alternate" hreflang="fr" href="https://caribbean-digital.fr/">
+<link rel="alternate" hreflang="en" href="https://caribbean-digital.fr/en.html">
+<link rel="alternate" hreflang="x-default" href="https://caribbean-digital.fr/">
+<meta name="theme-color" content="#0a1f42">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Caribbean Digital","url":"https://caribbean-digital.fr","logo":"https://caribbean-digital.fr/apple-touch-icon.png","email":"contact@caribbean-digital.fr","identifier":"SIREN 107208373","address":{"@type":"PostalAddress","postalCode":"97133","addressLocality":"Saint-Barthélemy","addressCountry":"FR"}}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230b2e6b'/%3E%3Cstop offset='.55' stop-color='%231795c9'/%3E%3Cstop offset='1' stop-color='%232ad2c5'/%3E%3C/linearGradient%3E%3Cmask id='m' maskUnits='userSpaceOnUse' x='0' y='0' width='512' height='512'%3E%3Crect width='512' height='512' fill='white'/%3E%3Cpath d='M 245 154 L 245 340 M 245 154 L 305 154 A 86 86 0 0 1 391 240 L 391 254 A 86 86 0 0 1 305 340 L 245 340' fill='none' stroke='black' stroke-width='80' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='512' height='512' rx='116' fill='url(%23g)'/%3E%3Cpath d='M 252 154 L 179 154 A 79 79 0 0 0 100 233 L 100 261 A 79 79 0 0 0 179 340 L 252 340' fill='none' stroke='white' stroke-width='50' stroke-linecap='round' mask='url(%23m)'/%3E%3Cpath d='M 245 154 L 245 340 M 245 154 L 305 154 A 86 86 0 0 1 391 240 L 391 254 A 86 86 0 0 1 305 340 L 245 340' fill='none' stroke='white' stroke-width='50' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='345' y='95' width='30' height='30' rx='5' fill='white'/%3E%3Crect x='385' y='72' width='25' height='25' rx='4.5' fill='white' opacity='.95'/%3E%3Crect x='382' y='115' width='18' height='18' rx='3.6' fill='white' opacity='.85'/%3E%3Crect x='422' y='92' width='20' height='20' rx='4' fill='white' opacity='.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* Palette extraite du logo */
+    --paper:#f6f5f1;          /* blanc cassé officiel (mono-blanc) */
+    --card:#ffffff;
+    --ink:#12304f;            /* encre du wordmark */
+    --muted:#5b6d84;
+    --navy:#0a1f42;           /* fond profond (hero/contact) */
+    --navy-deep:#071531;
+    --deep:#16406f;
+    --cyan:#1795c9;           /* l'accent "DIGITAL" */
+    --sky:#46b9e6;
+    --mint:#2ad2c5;
+    --grad:linear-gradient(135deg,#16406f 0%,#1795c9 55%,#2ad2c5 100%);
+    --line:#e4e1d8;
+    --line-dark:rgba(255,255,255,.12);
+    --max:1120px;
+    --pad:clamp(1.25rem,4vw,2.5rem);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Sora',system-ui,sans-serif;
+    font-weight:400;
+    line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{background:var(--cyan);color:#fff}
+  a{color:inherit}
+  img,svg{display:block;max-width:100%}
+  .wrap{max-width:var(--max);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+  /* ---------- Typo ---------- */
+  .sg{font-family:'Space Grotesk',sans-serif}
+  h1,h2,h3{font-family:'Space Grotesk',sans-serif;font-weight:700;line-height:1.14;letter-spacing:-.01em}
+  h1{font-size:clamp(2.4rem,5.6vw,4.1rem)}
+  h2{font-size:clamp(1.75rem,3.5vw,2.6rem);margin-bottom:1.1rem}
+  h3{font-size:1.18rem;font-weight:600;margin-bottom:.5rem}
+  .lede{font-size:clamp(1rem,1.5vw,1.15rem);color:var(--muted);max-width:40em;font-weight:300}
+  .eyebrow{
+    font-family:'Space Grotesk',sans-serif;font-size:.78rem;font-weight:600;
+    letter-spacing:.22em;text-transform:uppercase;color:var(--cyan);
+    display:flex;align-items:center;gap:.8rem;margin-bottom:1.3rem;
+  }
+  .eyebrow::before{content:"";width:2rem;height:2px;background:var(--grad);border-radius:2px}
+  .grad-text{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--navy) 92%, transparent);
+    backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--line-dark);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:4.3rem}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none}
+  .brand svg{height:2rem;width:auto}
+  .brand .word{font-family:'Space Grotesk',sans-serif;color:#fff;font-weight:700;font-size:1rem;letter-spacing:.14em}
+  .brand .word em{font-style:normal;font-weight:500;color:var(--mint);letter-spacing:.3em;font-size:.72rem;display:block;margin-top:-.1rem}
+  nav.links{display:flex;gap:clamp(.9rem,3vw,2.1rem);align-items:center}
+  nav.links a{
+    text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:500;
+    color:rgba(255,255,255,.75);padding:.55rem 0;position:relative;transition:color .2s;
+  }
+  nav.links a::after{
+    content:"";position:absolute;left:0;bottom:.28rem;width:100%;height:2px;border-radius:2px;
+    background:var(--grad);transform:scaleX(0);transform-origin:left;transition:transform .25s;
+  }
+  nav.links a:hover{color:#fff}
+  nav.links a:hover::after{transform:scaleX(1)}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--mint);outline-offset:3px;border-radius:3px}
+
+  /* ---------- Hero (fond marine) ---------- */
+  .hero{
+    background:
+      radial-gradient(58rem 30rem at 82% -12%, rgba(42,210,197,.14), transparent 60%),
+      radial-gradient(50rem 28rem at 8% 110%, rgba(23,149,201,.16), transparent 60%),
+      linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;
+    padding:clamp(4.2rem,9vw,7.5rem) 0 clamp(4rem,8.5vw,7rem);
+    position:relative;overflow:hidden;
+  }
+  .hero .eyebrow{color:var(--mint)}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,6vw,5rem);align-items:center;position:relative}
+  .hero .lede{color:#aabdd6;margin-top:1.5rem}
+  .hero-mark{position:relative;display:grid;place-items:center}
+  .hero-mark svg{width:min(78%,330px);height:auto;filter:drop-shadow(0 24px 60px rgba(23,149,201,.35))}
+  /* pluie de pixels d'ambiance */
+  .px{position:absolute;border-radius:3px;background:var(--grad);opacity:.5;animation:float 7s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+
+  .cta-row{display:flex;flex-wrap:wrap;gap:1rem;margin-top:2.4rem}
+  .btn{
+    display:inline-flex;align-items:center;gap:.55rem;text-decoration:none;
+    font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;
+    padding:.9rem 1.6rem;border-radius:12px;min-height:44px;
+    transition:transform .18s, box-shadow .18s, background .18s, border-color .18s;
+  }
+  .btn-grad{background:var(--grad);color:#fff;box-shadow:0 10px 26px -12px rgba(23,149,201,.55)}
+  .btn-grad:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(42,210,197,.55)}
+  .btn-line{border:1px solid var(--line-dark);color:#fff}
+  .btn-line:hover{border-color:var(--mint);color:var(--mint)}
+  .btn .arr{transition:transform .18s}
+  .btn:hover .arr{transform:translateX(3px)}
+  .arr-ext{width:.85em;height:.85em;display:inline-block;vertical-align:-.08em;margin-left:.25em}
+
+  /* ---------- Sections ---------- */
+  section{padding:clamp(4rem,9vw,7rem) 0}
+  .section-head{max-width:46em;margin-bottom:clamp(2.2rem,5vw,3.4rem)}
+
+  /* Société */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,5vw,4.5rem)}
+  .two-col p{color:var(--muted);font-weight:300}
+  .two-col p+p{margin-top:1rem}
+  .two-col p strong{color:var(--ink);font-weight:600}
+  .id-card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:1.7rem 1.7rem 1.6rem;position:relative;overflow:hidden;align-self:start;
+    box-shadow:0 16px 44px -28px rgba(18,48,79,.35);
+  }
+  .id-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+  .id-head{display:flex;align-items:center;gap:.6rem;margin-bottom:1.5rem;
+    font-family:'Space Grotesk',sans-serif;font-size:.74rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+  .id-head::before{content:"";width:.55rem;height:.55rem;border-radius:2px;background:var(--grad)}
+  .id-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem 1.6rem}
+  .id-item .k{display:block;font-family:'Space Grotesk',sans-serif;font-size:.66rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--cyan);margin-bottom:.35rem}
+  .id-item .v{font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:.95rem;line-height:1.5;color:var(--ink);overflow-wrap:anywhere}
+  .id-item .v a{color:inherit;text-decoration:none;border-bottom:1.5px solid rgba(23,149,201,.35);transition:color .2s,border-color .2s}
+  .id-item .v a:hover{color:var(--cyan);border-color:var(--cyan)}
+
+  /* Pulse */
+  .pulse-section{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .badge{
+    display:inline-flex;align-items:center;gap:.6rem;
+    background:linear-gradient(135deg,rgba(23,149,201,.1),rgba(42,210,197,.12));
+    color:var(--cyan);border:1px solid rgba(23,149,201,.25);
+    font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    padding:.55rem 1rem;border-radius:2rem;margin-bottom:1.5rem;
+  }
+  .badge .live{width:.5rem;height:.5rem;border-radius:50%;background:var(--mint);animation:blink 2.2s ease-in-out infinite}
+  @keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
+  .features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .feature{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:1.8rem 1.6rem;position:relative;overflow:hidden;
+    transition:transform .2s, box-shadow .2s;
+  }
+  .feature::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;
+    background:var(--grad);opacity:0;transition:opacity .25s;
+  }
+  .feature:hover{transform:translateY(-4px);box-shadow:0 18px 40px -22px rgba(18,48,79,.35)}
+  .feature:hover::before{opacity:1}
+  .feature .glyph{
+    width:2.7rem;height:2.7rem;border-radius:11px;margin-bottom:1.1rem;
+    background:var(--grad);display:grid;place-items:center;color:#fff;
+  }
+  .feature p{color:var(--muted);font-size:.93rem;font-weight:300}
+
+  /* carte produit Pulse */
+  .product-card{
+    background:var(--card);border:1px solid var(--line);border-radius:20px;
+    padding:clamp(2rem,4.5vw,3.2rem);position:relative;overflow:hidden;
+    box-shadow:0 26px 64px -34px rgba(18,48,79,.38);
+  }
+  .product-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad)}
+  .pc-caps{display:flex;flex-wrap:wrap;gap:1.1rem 2.4rem;margin-top:2.1rem}
+  .pc-cap{display:flex;align-items:center;gap:.8rem;font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.92rem;color:var(--ink)}
+  .pc-cap .pic{width:2.4rem;height:2.4rem;border-radius:10px;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none}
+  .pc-cap .pic svg{width:1.35rem;height:1.35rem}
+  .pc-cta{
+    display:inline-flex;align-items:center;gap:.45rem;margin-top:2.2rem;min-height:44px;
+    font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:.95rem;
+    color:var(--cyan);text-decoration:none;
+  }
+  .pc-cta .arr{transition:transform .18s}
+  .pc-cta:hover{color:var(--mint)}
+  .pc-cta:hover .arr{transform:translate(2px,-2px)}
+
+  /* Déploiement — l'arc antillais animé */
+  .deploy-panel{
+    margin-top:3.6rem;border-radius:24px;color:#fff;
+    background:
+      radial-gradient(36rem 20rem at 88% -15%, rgba(42,210,197,.15), transparent 60%),
+      linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+    padding:clamp(2.2rem,5vw,3.8rem);
+    display:grid;grid-template-columns:1fr 1fr;gap:clamp(1.8rem,4vw,3.5rem);align-items:center;
+    overflow:hidden;
+  }
+  .deploy-panel .eyebrow{color:var(--mint)}
+  .deploy-panel h2{color:#fff}
+  .dp-copy>p:not(.eyebrow){color:#aabdd6;font-weight:300}
+  .dp-note{font-family:'Space Grotesk',sans-serif;font-size:.76rem;font-weight:500;letter-spacing:.06em;color:rgba(255,255,255,.5);margin-top:1.3rem}
+  .dp-chart{margin:0}
+  .dp-chart svg{width:100%;height:auto;max-height:540px;display:block;margin:0 auto}
+  .dp-chart text{font-family:'Space Grotesk',sans-serif}
+  .aL{font-size:12.5px;font-weight:700;letter-spacing:.12em;fill:#fff}
+  .aS{font-size:9.5px;letter-spacing:.05em;fill:rgba(255,255,255,.55)}
+  .aD{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;fill:rgba(255,255,255,.45)}
+  .aD.m{fill:var(--mint)}
+  .aD.c{fill:var(--cyan)}
+  svg a.isl{cursor:pointer}
+  svg a.isl:hover .aL,svg a.isl:focus .aL{fill:var(--mint)}
+  .halo{fill:none;stroke:var(--mint);stroke-width:1.6;transform-box:fill-box;transform-origin:center;animation:haloAnim 2.6s ease-out infinite}
+  .halo.h2{animation-delay:1.3s}
+  @keyframes haloAnim{0%{transform:scale(.45);opacity:.85}100%{transform:scale(2.7);opacity:0}}
+  html.js .arc-draw{stroke-dasharray:1;stroke-dashoffset:1}
+  html.js .deploy-panel.in .arc-draw{animation:drawArc 1.9s .15s ease forwards}
+  @keyframes drawArc{to{stroke-dashoffset:0}}
+  html.js .deploy-panel svg a.isl{opacity:0}
+  html.js .deploy-panel.in svg a.isl{animation:islIn .6s ease forwards}
+  html.js .deploy-panel.in svg a.isl.i1{animation-delay:.4s}
+  html.js .deploy-panel.in svg a.isl.i2{animation-delay:.75s}
+  html.js .deploy-panel.in svg a.isl.i3{animation-delay:1.25s}
+  html.js .deploy-panel.in svg a.isl.i4{animation-delay:1.7s}
+  @keyframes islIn{to{opacity:1}}
+
+  /* Approche */
+  .principles{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,4vw,3rem)}
+  .principle{position:relative;padding-top:1.4rem}
+  .principle::before{content:"";position:absolute;top:0;left:0;width:2.6rem;height:3px;border-radius:3px;background:var(--grad)}
+  .principle p{color:var(--muted);font-size:.94rem;font-weight:300;margin-top:.4rem}
+
+  /* Contact */
+  .contact{
+    background:
+      radial-gradient(40rem 22rem at 90% -20%, rgba(42,210,197,.16), transparent 60%),
+      linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:#fff;border-radius:24px;
+    padding:clamp(2.6rem,6vw,4.6rem);
+    display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(2rem,5vw,4rem);align-items:center;
+    position:relative;overflow:hidden;
+  }
+  .contact .eyebrow{color:var(--mint)}
+  .contact h2{color:#fff}
+  .contact p{color:#aabdd6;font-weight:300}
+  .contact-card{display:grid;gap:1.3rem}
+  .contact-line{border-bottom:1px solid var(--line-dark);padding-bottom:1.1rem}
+  .contact-line:last-child{border-bottom:none;padding-bottom:0}
+  .contact-line .k{font-family:'Space Grotesk',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--mint);margin-bottom:.35rem}
+  .contact-line a{color:#fff;text-decoration:none;font-family:'Space Grotesk',sans-serif;font-size:1.05rem;font-weight:600}
+  .contact-line a:hover{color:var(--mint)}
+  .contact-line .v{color:#e6edf6;font-size:1rem}
+
+  /* Footer */
+  footer{padding:2.8rem 0 3.4rem}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.4rem;align-items:center}
+  .foot svg{height:2.4rem;width:auto}
+  .foot .legal{font-size:.78rem;color:var(--muted);max-width:44em;line-height:1.8;font-weight:300}
+  .foot .legal a{color:var(--muted)}
+
+  /* sélecteur de langue — pilule discrète */
+  .lang{display:flex;gap:.35rem;align-items:center;font-family:'Space Grotesk',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.08em;border:1px solid rgba(255,255,255,.16);border-radius:2rem;padding:.2rem .7rem}
+  .lang a{color:rgba(255,255,255,.5);text-decoration:none;padding:.3rem .1rem}
+  .lang a:hover{color:#fff}
+  .lang a.active{color:var(--mint)}
+  .lang .sep{color:rgba(255,255,255,.25)}
+
+  /* ---------- Reveal ---------- */
+  html.js .reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+  html.js .reveal.in{opacity:1;transform:none}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .px,.badge .live{animation:none}
+    .halo{animation:none;opacity:.3;transform:scale(1.7)}
+    html.js .arc-draw{stroke-dashoffset:0;animation:none}
+    html.js .deploy-panel svg a.isl{opacity:1;animation:none}
+    html.js .reveal{opacity:1;transform:none;transition:none}
+    .btn,.feature{transition:none}
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:880px){
+    .hero-grid{grid-template-columns:1fr;gap:3rem}
+    .hero-mark{order:-1}
+    .hero-mark svg{width:min(52%,220px)}
+    .two-col{grid-template-columns:1fr}
+    .features{grid-template-columns:1fr}
+    .deploy-panel{grid-template-columns:1fr;padding:1.9rem 1.4rem}
+    .id-grid{grid-template-columns:1fr}
+    .principles{grid-template-columns:1fr}
+    .contact{grid-template-columns:1fr}
+    nav.links > a{display:none}
+    .brand .word{font-size:.88rem}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="Caribbean Digital — accueil">
+      <!-- logo-mono-blanc.svg (inline) -->
+      <svg viewBox="0 0 134 104" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <mask id="ncut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="184" height="150">
+            <rect x="-20" y="-20" width="184" height="150" fill="#fff"/>
+            <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+          </mask>
+        </defs>
+        <path d="M 64 28 L 42 28 A 24 24 0 0 0 18 52 L 18 60 A 24 24 0 0 0 42 84 L 64 84" fill="none" stroke="#f6f5f1" stroke-width="15" stroke-linecap="round" mask="url(#ncut)"/>
+        <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#f6f5f1" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="92" y="10" width="9" height="9" rx="1.6" fill="#f6f5f1"/>
+        <rect x="104" y="3" width="7.5" height="7.5" rx="1.4" fill="#f6f5f1" opacity=".95"/>
+        <rect x="103" y="16" width="5.5" height="5.5" rx="1.1" fill="#f6f5f1" opacity=".85"/>
+        <rect x="115" y="9" width="6" height="6" rx="1.2" fill="#f6f5f1" opacity=".8"/>
+        <rect x="116" y="0" width="5" height="5" rx="1" fill="#f6f5f1" opacity=".7"/>
+        <rect x="126" y="5" width="4" height="4" rx=".8" fill="#f6f5f1" opacity=".55"/>
+      </svg>
+      <span class="word">CARIBBEAN<em>— DIGITAL —</em></span>
+    </a>
+    <nav class="links" aria-label="Navigation principale">
+      <a href="#societe">La société</a>
+      <a href="#services">Expertises</a>
+      <a href="#pulse">Pulse</a>
+      <a href="#contact">Contact</a>
+      <span class="lang" aria-label="Langue"><a href="index.html" class="active" aria-current="true">FR</a><span class="sep">/</span><a href="en.html" hreflang="en">EN</a></span>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow sg">Saint-Barthélemy · Antilles françaises</p>
+        <h1>Le numérique,<br><span class="grad-text">pensé depuis les îles.</span></h1>
+        <p class="lede">Caribbean Digital conçoit des applications web &amp; mobiles, accompagne les entreprises et les institutions, et édite ses propres produits pour les Antilles françaises — dont <strong style="color:#fff;font-weight:600">Pulse</strong>, l'information locale en temps réel.</p>
+        <div class="cta-row">
+          <a class="btn btn-grad" href="#services">Nos expertises <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn btn-line" href="#contact">Nous écrire</a>
+        </div>
+      </div>
+
+      <div class="hero-mark" aria-hidden="true">
+        <!-- pixels d'ambiance -->
+        <span class="px" style="width:14px;height:14px;top:6%;right:14%;animation-delay:0s"></span>
+        <span class="px" style="width:9px;height:9px;top:16%;right:6%;opacity:.35;animation-delay:1.2s"></span>
+        <span class="px" style="width:7px;height:7px;top:2%;right:30%;opacity:.3;animation-delay:2.4s"></span>
+        <span class="px" style="width:10px;height:10px;bottom:10%;left:8%;opacity:.25;animation-delay:1.8s"></span>
+        <span class="px" style="width:6px;height:6px;bottom:22%;left:18%;opacity:.2;animation-delay:.6s"></span>
+        <!-- logo-symbole.svg (inline) -->
+        <svg viewBox="0 0 134 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Monogramme Caribbean Digital">
+          <defs>
+            <linearGradient id="hgC" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#16406f"/><stop offset="1" stop-color="#2f9ad2"/></linearGradient>
+            <linearGradient id="hgD" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1d64ab"/><stop offset="1" stop-color="#46b9e6"/></linearGradient>
+            <linearGradient id="hgP" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2f9ad2"/><stop offset="1" stop-color="#3fdc9a"/></linearGradient>
+            <mask id="hcut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="184" height="150">
+              <rect x="-20" y="-20" width="184" height="150" fill="#fff"/>
+              <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+            </mask>
+          </defs>
+          <path d="M 64 28 L 42 28 A 24 24 0 0 0 18 52 L 18 60 A 24 24 0 0 0 42 84 L 64 84" fill="none" stroke="url(#hgC)" stroke-width="15" stroke-linecap="round" mask="url(#hcut)"/>
+          <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="url(#hgD)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="92" y="10" width="9" height="9" rx="1.6" fill="url(#hgP)"/>
+          <rect x="104" y="3" width="7.5" height="7.5" rx="1.4" fill="url(#hgP)" opacity=".95"/>
+          <rect x="103" y="16" width="5.5" height="5.5" rx="1.1" fill="url(#hgP)" opacity=".85"/>
+          <rect x="115" y="9" width="6" height="6" rx="1.2" fill="url(#hgP)" opacity=".8"/>
+          <rect x="116" y="0" width="5" height="5" rx="1" fill="url(#hgP)" opacity=".7"/>
+          <rect x="126" y="5" width="4" height="4" rx=".8" fill="url(#hgP)" opacity=".55"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ LA SOCIÉTÉ ============ -->
+  <section id="societe">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow sg">La société</p>
+        <h2>Une maison indépendante,<br>basée à Saint-Barthélemy.</h2>
+      </div>
+      <div class="two-col">
+        <div class="reveal">
+          <p>Caribbean Digital est une société indépendante installée à Saint-Barthélemy. Nous concevons des applications web et mobiles, accompagnons les entreprises et les institutions dans leurs projets numériques, et développons nos propres produits pour <strong>les Antilles françaises</strong>.</p>
+          <p>Notre façon de faire&nbsp;: des outils sobres et fiables, construits avec les technologies d'aujourd'hui — de l'application métier à l'intelligence artificielle — et pensés depuis l'intérieur des îles, au plus près des besoins réels.</p>
+        </div>
+        <div class="id-card reveal">
+          <div class="id-head">Fiche d'identité</div>
+          <div class="id-grid">
+            <div class="id-item"><span class="k">Immatriculation</span><span class="v">RCS Basse-Terre<br>107&nbsp;208&nbsp;373</span></div>
+            <div class="id-item"><span class="k">Siège</span><span class="v">97133 Saint-Barthélemy</span></div>
+            <div class="id-item"><span class="k">Activité</span><span class="v">Édition de tous types<br>d'applications web &amp; mobiles</span></div>
+            <div class="id-item"><span class="k">Contact</span><span class="v"><a href="mailto:contact@caribbean-digital.fr">contact@caribbean-digital.fr</a></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERTISES ============ -->
+  <section id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow sg">Nos expertises</p>
+        <h2>Tous types d'applications,<br>et au-delà.</h2>
+      </div>
+      <div class="features">
+        <div class="feature reveal">
+          <div class="glyph" aria-hidden="true">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"/><path d="m8 6-6 6 6 6"/></svg>
+          </div>
+          <h3>Applications sur mesure</h3>
+          <p>Conception et développement d'applications web et mobiles (PWA), de l'idée à la mise en ligne — pour les entreprises, les collectivités et les projets qui veulent un outil à leur mesure.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="glyph" aria-hidden="true">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/></svg>
+          </div>
+          <h3>Conseil &amp; accompagnement</h3>
+          <p>Stratégie numérique, choix techniques, conformité RGPD&nbsp;: un accompagnement clair et pragmatique, pensé pour les réalités locales.</p>
+        </div>
+        <div class="feature reveal">
+          <div class="glyph" aria-hidden="true">
+            <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg>
+          </div>
+          <h3>IA &amp; automatisation</h3>
+          <p>Intégration d'intelligence artificielle, automatisation des tâches, assistants et outils internes&nbsp;: les nouvelles technologies, appliquées utilement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PULSE ============ -->
+  <section id="pulse" class="pulse-section">
+    <div class="wrap">
+      <div class="product-card reveal">
+        <span class="badge"><span class="live" aria-hidden="true"></span>Lancement — Saint-Barthélemy · Septembre 2026</span>
+        <h2>Notre produit&nbsp;: <span class="grad-text">Pulse.</span></h2>
+        <p class="lede">Une application communautaire qui donne le pouls de l'île en temps réel — alimentée par celles et ceux qui y vivent, sous forme de signalements structurés.</p>
+        <div class="pc-caps">
+          <div class="pc-cap"><span class="pic" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 34l3-9a3 3 0 0 1 3-2h16a3 3 0 0 1 3 2l3 9"/><rect x="12" y="32" width="32" height="9" rx="2"/><circle cx="19" cy="41" r="3.5" fill="currentColor" stroke="none"/><circle cx="37" cy="41" r="3.5" fill="currentColor" stroke="none"/></svg>
+          </span><span>Trafic &amp; incidents</span></div>
+          <div class="pc-cap"><span class="pic" aria-hidden="true">
+            <svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><circle cx="28" cy="18" r="8" fill="currentColor" opacity=".25" stroke="none"/><path d="M28 14v28"/><path d="M14 22c4-4 10-4 14 0M28 22c4-4 10-4 14 0"/><path d="M12 42c3-2 6-2 9 0s6 2 9 0 6-2 9 0 6 2 9 0"/></svg>
+          </span><span>Plages &amp; conditions</span></div>
+          <div class="pc-cap"><span class="pic" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span><span>Affluence des lieux</span></div>
+        </div>
+        <a class="pc-cta" href="https://pulse-sbh.com" target="_blank" rel="noopener">Découvrir Pulse — pulse-sbh.com <svg class="arr arr-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+      </div>
+
+      <div class="deploy-panel reveal">
+        <div class="dp-copy">
+          <p class="eyebrow sg">Déploiement</p>
+          <h2>L'arc antillais,<br>île après île.</h2>
+          <p>Pulse ouvre à Saint-Barthélemy, puis remonte l'arc des Petites Antilles — chaque île aura sa propre application et sa propre communauté.</p>
+          <p class="dp-note">Sélectionnez une île pour visiter son site<svg class="arr-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></p>
+        </div>
+        <figure class="dp-chart" aria-label="Carte de déploiement : Saint-Barthélemy en septembre 2026, Saint-Martin en octobre 2026, Guadeloupe et Martinique à venir">
+          <svg viewBox="0 0 400 560" role="img">
+            <defs>
+              <linearGradient id="arcG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#46b9e6"/><stop offset="1" stop-color="#2ad2c5"/></linearGradient>
+              <mask id="arcM" maskUnits="userSpaceOnUse" x="0" y="0" width="400" height="560">
+                <path class="arc-draw" pathLength="1" d="M 212 64 C 196 130, 158 210, 132 300 C 112 372, 100 430, 96 496" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round"/>
+              </mask>
+            </defs>
+            <text class="aS" x="306" y="36" text-anchor="middle" style="font-size:11px" opacity=".6">N</text>
+            <g fill="none" stroke="#fff" stroke-linecap="round" opacity=".1" stroke-width="1.3">
+              <path d="M 52 118 c 5 -3.5 10 -3.5 15 0 c 5 3.5 10 3.5 15 0"/>
+              <path d="M 252 258 c 4.5 -3 9 -3 13.5 0 c 4.5 3 9 3 13.5 0"/>
+              <path d="M 42 428 c 4.5 -3 9 -3 13.5 0 c 4.5 3 9 3 13.5 0"/>
+            </g>
+            <path d="M 212 64 C 196 130, 158 210, 132 300 C 112 372, 100 430, 96 496" fill="none" stroke="url(#arcG)" stroke-width="1.6" stroke-dasharray="3 6" stroke-linecap="round" mask="url(#arcM)" opacity=".95"/>
+
+            <a class="isl i1" href="https://pulse-sxm.com" target="_blank" rel="noopener" aria-label="Pulse Saint-Martin — octobre 2026">
+              <circle cx="209" cy="78" r="28" fill="transparent"/>
+              <path d="M 201.5 77.5 C 202 73.8, 205.5 71.4, 209.5 72 C 213.5 72.6, 216.4 74.8, 216 78.2 C 215.6 81.6, 212 83.9, 208 83.4 C 204.4 82.9, 201.1 81.1, 201.5 77.5 Z" fill="#0a1f42" stroke="#1795c9" stroke-width="1.8" stroke-linejoin="round"/>
+              <text class="aL" x="228" y="74">SXM</text>
+              <text class="aS" x="228" y="89">Saint-Martin · 18°04′N</text>
+              <text class="aD c" x="228" y="104">Oct. 2026</text>
+            </a>
+
+            <a class="isl i2" href="https://pulse-sbh.com" target="_blank" rel="noopener" aria-label="Pulse Saint-Barthélemy — lancement septembre 2026">
+              <circle cx="182" cy="160" r="30" fill="transparent"/>
+              <circle class="halo" cx="182" cy="160" r="10"/>
+              <circle class="halo h2" cx="182" cy="160" r="10"/>
+              <path d="M 174.6 158.6 C 175.4 154.6, 179.2 151.8, 183.6 152.6 C 187.8 153.4, 190.6 156.6, 190.2 160.4 C 189.8 164.4, 186 167.2, 181.6 166.8 C 177 166.4, 173.8 162.8, 174.6 158.6 Z" fill="#2ad2c5"/>
+              <text class="aL" x="206" y="155">SBH</text>
+              <text class="aS" x="206" y="170">Saint-Barthélemy · 17°54′N</text>
+              <text class="aD m" x="206" y="185">Lancement · Sept. 2026</text>
+            </a>
+
+            <a class="isl i3" href="https://pulse-glp.com" target="_blank" rel="noopener" aria-label="Pulse Guadeloupe — à venir">
+              <circle cx="124" cy="326" r="28" fill="transparent"/>
+              <path d="M 114.8 324.4 C 115.6 320.8, 119 318.6, 122.6 319.6 C 124.4 320.1, 125.8 319.4, 127.8 319.9 C 131.4 320.8, 133.4 323.6, 132.4 326.8 C 131.4 329.9, 128.2 331.1, 125.2 330.3 C 123.6 329.9, 121.9 330.9, 119.8 330.6 C 116.4 330.1, 114.1 327.6, 114.8 324.4 Z" fill="transparent" stroke="rgba(255,255,255,.45)" stroke-width="1.5" stroke-linejoin="round"/>
+              <text class="aL" x="144" y="322">GLP</text>
+              <text class="aS" x="144" y="337">Guadeloupe · 16°15′N</text>
+              <text class="aD" x="144" y="352">À venir</text>
+            </a>
+
+            <a class="isl i4" href="https://pulse-mtq.com" target="_blank" rel="noopener" aria-label="Pulse Martinique — à venir">
+              <circle cx="97" cy="492" r="28" fill="transparent"/>
+              <path d="M 92.4 486.4 C 94.6 484.2, 98.2 484.6, 100.2 487 C 102.2 489.4, 102.8 493, 101.4 496.2 C 100 499.4, 96.6 500.8, 93.9 499 C 91.2 497.2, 90.4 493.8, 91.2 490.6 C 91.6 488.9, 91.4 487.4, 92.4 486.4 Z" fill="transparent" stroke="rgba(255,255,255,.45)" stroke-width="1.5" stroke-linejoin="round"/>
+              <text class="aL" x="117" y="488">MTQ</text>
+              <text class="aS" x="117" y="503">Martinique · 14°40′N</text>
+              <text class="aD" x="117" y="518">À venir</text>
+            </a>
+          </svg>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ APPROCHE ============ -->
+  <section id="approche">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow sg">Notre approche</p>
+        <h2>Trois principes, tenus.</h2>
+      </div>
+      <div class="principles">
+        <div class="principle reveal">
+          <h3>Ancrés localement</h3>
+          <p>Nous vivons et travaillons aux Antilles. Cette connaissance du terrain — les acteurs, les contraintes, les rythmes — se retrouve dans chaque projet que nous menons, pour nos clients comme pour nos produits.</p>
+        </div>
+        <div class="principle reveal">
+          <h3>Sobres avec vos données</h3>
+          <p>Les données sont hébergées dans l'Union européenne et ne sont ni vendues ni cédées. Le RGPD n'est pas une contrainte&nbsp;: c'est le cahier des charges de chacun de nos projets.</p>
+        </div>
+        <div class="principle reveal">
+          <h3>Proches &amp; réactifs</h3>
+          <p>Une structure courte, un interlocuteur unique, des décisions rapides&nbsp;: nous travaillons au plus près de nos clients, dans leur fuseau horaire et leur réalité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="contact reveal">
+        <div>
+          <p class="eyebrow sg">Contact</p>
+          <h2>Écrivez-nous.</h2>
+          <p>Partenariats, presse, institutions ou simple curiosité : nous répondons depuis Saint-Barthélemy.</p>
+        </div>
+        <div class="contact-card">
+          <div class="contact-line">
+            <div class="k">Email</div>
+            <a href="mailto:contact@caribbean-digital.fr">contact@caribbean-digital.fr</a>
+          </div>
+          <div class="contact-line">
+            <div class="k">Adresse</div>
+            <div class="v">97133 Saint-Barthélemy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot">
+    <!-- logo-horizontal.svg (inline) -->
+    <svg viewBox="0 0 348 104" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Caribbean Digital">
+      <defs>
+        <linearGradient id="fgC" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#16406f"/><stop offset="1" stop-color="#2f9ad2"/></linearGradient>
+        <linearGradient id="fgD" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#1d64ab"/><stop offset="1" stop-color="#46b9e6"/></linearGradient>
+        <linearGradient id="fgP" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#2f9ad2"/><stop offset="1" stop-color="#3fdc9a"/></linearGradient>
+        <mask id="fcut" maskUnits="userSpaceOnUse" x="-20" y="-20" width="184" height="150">
+          <rect x="-20" y="-20" width="184" height="150" fill="#fff"/>
+          <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="#000" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+        </mask>
+      </defs>
+      <path d="M 64 28 L 42 28 A 24 24 0 0 0 18 52 L 18 60 A 24 24 0 0 0 42 84 L 64 84" fill="none" stroke="url(#fgC)" stroke-width="15" stroke-linecap="round" mask="url(#fcut)"/>
+      <path d="M 62 28 L 62 84 M 62 28 L 80 28 A 26 26 0 0 1 106 54 L 106 58 A 26 26 0 0 1 80 84 L 62 84" fill="none" stroke="url(#fgD)" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="92" y="10" width="9" height="9" rx="1.6" fill="url(#fgP)"/>
+      <rect x="104" y="3" width="7.5" height="7.5" rx="1.4" fill="url(#fgP)" opacity=".95"/>
+      <rect x="103" y="16" width="5.5" height="5.5" rx="1.1" fill="url(#fgP)" opacity=".85"/>
+      <rect x="115" y="9" width="6" height="6" rx="1.2" fill="url(#fgP)" opacity=".8"/>
+      <rect x="116" y="0" width="5" height="5" rx="1" fill="url(#fgP)" opacity=".7"/>
+      <rect x="126" y="5" width="4" height="4" rx=".8" fill="url(#fgP)" opacity=".55"/>
+      <g font-family="'Space Grotesk','Sora',sans-serif">
+        <text x="160" y="58" font-size="30" font-weight="700" letter-spacing="3" fill="#12304f">CARIBBEAN</text>
+        <line x1="162" y1="76" x2="186" y2="76" stroke="#1795c9" stroke-width="2"/>
+        <text x="194" y="81" font-size="15" font-weight="500" letter-spacing="6.3" fill="#1795c9">DIGITAL</text>
+        <line x1="298" y1="76" x2="322" y2="76" stroke="#1795c9" stroke-width="2"/>
+      </g>
+    </svg>
+    <p class="legal">
+      © 2026 Caribbean Digital · 97133 Saint-Barthélemy · RCS Basse-Terre 107&nbsp;208&nbsp;373 ·
+      <a href="mailto:contact@caribbean-digital.fr">contact@caribbean-digital.fr</a> ·
+      <a href="mentions-legales.html">Mentions légales</a>
+    </p>
+  </div>
+</footer>
+
+<script>
+  document.documentElement.classList.add('js');
+  const io = new IntersectionObserver((entries)=>{
+    for (const e of entries){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+
+</body>
+</html>
