@@ -331,6 +331,16 @@
     nav.links > a{display:none}
     .brand .word{font-size:.88rem}
   }
+  .badge .bd-short{display:none}
+  .badge .nw{white-space:nowrap}
+  @media (max-width:760px){
+    .badge .bd-full{display:none}
+    .badge .bd-short{display:inline}
+  }
+  @media (max-width:540px){
+    .badge .bd-sep{display:none}
+    .badge .bd-2{display:block}
+  }
 </style>
 </head>
 <body>
@@ -475,7 +485,7 @@
   <section id="pulse" class="pulse-section">
     <div class="wrap">
       <div class="product-card reveal">
-        <span class="badge"><span class="live" aria-hidden="true"></span>Launching — Saint Barthélemy · Sept. 2026 · Saint Martin · Oct. 2026</span>
+        <span class="badge"><span class="live" aria-hidden="true"></span><span class="bd-full">Launching — Saint Barthélemy · Sept. 2026 · Saint Martin · Oct. 2026</span><span class="bd-short">Launch — <span class="nw">SBH · Sept. 2026</span><span class="bd-sep"> · </span><span class="nw bd-2">SXM · Oct. 2026</span></span></span>
         <h2>Our flagship product: <span class="grad-text">Pulse</span></h2>
         <p class="lede">A community app that gives the island's pulse in real time — powered by the people who live there, through structured reports.</p>
         <div class="pc-caps">
